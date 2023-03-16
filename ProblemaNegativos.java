@@ -13,10 +13,13 @@ public class ProblemaNegativos {
         System.out.println("How many numbers are you going to digite?");
         int quant = oli.nextInt();
 
-        if (quant <= 0 || quant > 10) {
-            System.out.println("Quantity should be a positive integer less than or equal to 10!");
+        if (quant <= 0 || quant > 10) {// semelhante ao sensor de numeros negativos, aqui ele analisa o numero do
+                                       // usuario e verifica se e positivo ou maior que 10
+            System.out.println("Quantity should be a positive integer less than or equal to 10!");// encerramento do
+                                                                                                  // programa em caso de
+                                                                                                  // numero maior que 10
             oli.close();
-            return;
+            return;// ele retorna o numero caso nao tenha divergencias
         }
         int[] vect = new int[quant];
 
@@ -26,9 +29,9 @@ public class ProblemaNegativos {
 
         System.out.println("Negative numbers:");
 
-        for (int i = 0; i < vect.length; i++) {
-            if (vect[i] < 0) {
-                System.out.println(vect[i]);
+        for (int i = 0; i < vect.length; i++) {// comando que percorre todos os numeros na quantidade do vetor
+            if (vect[i] < 0) { // comando verificador se o numero é negativo ou nao
+                System.out.println(vect[i]);// impressao dos numeros negativos
             }
 
             oli.close();

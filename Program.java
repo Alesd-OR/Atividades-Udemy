@@ -33,7 +33,8 @@ public class Program {
 		System.out.print("Enter account holder: ");
 		oli.nextLine();
 		String holder = oli.nextLine();
-		System.out.print("Is there an initial deposit (y/n)? ");
+		System.out.print("Is there an initial deposit (y/n)? "); // parte do código que pergunta se terá dado adicional.
+																	// Y = YES. N = NO
 		char response = oli.next().charAt(0);
 		if (response == 'y') {
 			System.out.print("Enter initial deposit value: ");

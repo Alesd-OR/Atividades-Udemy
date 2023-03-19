@@ -14,8 +14,8 @@ public class ProblemaSomaeMediaVetor {
         double soma = 0;
 
         System.out.println("Digite a quantidade de números que você quer saber a média: ");
-
         int quantidade = oli.nextInt();
+
         int[] vetor = new int[quantidade];
 
         for (int i = 0; i < vetor.length; i++) {

@@ -8,7 +8,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ProblemaDadosPessoas {
-
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
@@ -45,6 +44,7 @@ public class ProblemaDadosPessoas {
         qtdhomens = 0;
         qtdmulheres = 0;
         alturafemtotal = 0;
+
         for (int i = 0; i < n; i++) {
             if (generos[i] == 'M') {
                 qtdhomens++;
